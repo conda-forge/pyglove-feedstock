@@ -1,5 +1,5 @@
 {% set name = "pyglove" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/google/pyglove/archive/v{{ version }}.tar.gz
-  sha256: 40a0410c9cc03897b7200470cc6ed02e3f124137a6da9ed6ec04d549801789ab
+  sha256: e8670b78013121f2710e17c5ca4f6de2968d47c1e16568db6b463049c3f0e1c5
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
